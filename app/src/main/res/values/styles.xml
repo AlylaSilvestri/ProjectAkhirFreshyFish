@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="next">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="back">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="skip">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#80787880</item>
+    </style>
+
+    <style name="shopping_fo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="more_practi">
+        <item name="android:textSize">31sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>

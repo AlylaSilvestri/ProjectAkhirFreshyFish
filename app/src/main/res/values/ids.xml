@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="group_21" type="id" />
+    <item name="group_14" type="id" />
+    <item name="rectangle_2" type="id" />
+    <item name="next" type="id" />
+    <item name="back" type="id" />
+    <item name="skip" type="id" />
+    <item name="shopping_fo" type="id" />
+    <item name="more_practi" type="id" />
+</resources>

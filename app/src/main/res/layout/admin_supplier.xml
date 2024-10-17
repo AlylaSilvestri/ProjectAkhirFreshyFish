@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#00A4E4">
+
+        <!-- Greeting Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, User"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep manage your sales safe"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Profile Picture Placeholder -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:background="#DADADA" />
+    </LinearLayout>
+
+    <!-- Search Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Search Input -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <!-- Search Button -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_24"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Search" />
+    </LinearLayout>
+
+    <!-- Transaksi Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaksi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp" />
+
+    <!-- Transaksi Table -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Row 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/lele"
+                android:contentDescription="Product Image"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Text Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/02/2024"
+                    android:textColor="#616161"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Quantity -->
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="1"
+                android:gravity="center"
+                android:background="@drawable/rounded_background_light"
+                android:padding="8dp" />
+
+            <!-- Status Button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diproses"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- Duplicate the row for more transactions -->
+        <!-- Row 2, Row 3, and so on... -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <!-- Image -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/lele"
+                android:contentDescription="Product Image"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Text Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/02/2024"
+                    android:textColor="#616161"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Quantity -->
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="1"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <!-- Status Button -->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Diproses"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C81100"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00A4E4"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <!-- Icon 1 -->
+        <!-- Home Icon -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_home_24"
+            android:contentDescription="Home"
+            app:tint="#FFFFFF" />
+
+        <!-- Cart Icon -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_shopping_cart_24"
+            android:contentDescription="Cart"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:tint="#FFFFFF" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="Profile"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

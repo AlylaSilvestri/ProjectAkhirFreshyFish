@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/shopping_fo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_back"
+        android:gravity="center|center_vertical"
+        android:text="Supplier"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/shopping_fo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_next"
+        android:gravity="center"
+        android:text="Customer"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_alignEnd="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        android:layout_alignLeft="@id/imageView"
+        android:layout_marginTop="68dp" />
+
+    <TextView
+        android:id="@+id/more_practi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal|top"
+        android:text="@string/lets_get"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/more_practi" />
+
+
+    <TextView
+        android:id="@+id/shopping_fo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_practi"
+        android:layout_alignBottom="@+id/more_practi"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-81dp"
+        android:gravity="center"
+        android:text="@string/order_your_fav"
+        android:textAppearance="@style/shopping_fo"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/more_practi" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_margin="60dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_black" />
+</RelativeLayout>

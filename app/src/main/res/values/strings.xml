@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">ProjectAkhirFreshyFish</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="shopping_fo">
+        Shopping for fresh consumer fish is now easier with our e-commerce app, straight from the fisherman to your kitchen!
+    </string>
+    <string name="more_practi">More Practical</string>
+    <string name="find_a_wide">
+        Find a wide selection of high-quality fresh fish at affordable prices only on our consumer fish e-commerce app.
+    </string>
+    <string name="various_opt">Various Options</string>
+    <string name="lets_get">Let’s Get Started!!</string>
+    <string name="order_your_fav">
+        Order your favorite consumable fish anytime, anywhere, and enjoy the freshness all the way home!
+    </string>
+    <string name="log_in_to_y">Log in to your account and start buying your fish</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don’t have an account? Sign up</string>
+    <string name="hi_user">Hi,\nUser</string>
 </resources>

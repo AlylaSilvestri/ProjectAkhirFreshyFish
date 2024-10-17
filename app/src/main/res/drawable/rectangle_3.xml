@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rectangle_3.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the rectangle -->
+    <solid android:color="#0096C8"/> <!-- Blue color -->
+
+    <!-- Set corner radius to make the corners slightly rounded -->
+    <corners android:radius="10dp"/>
+
+    <!-- Optionally, add a shadow or elevation -->
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="5dp"/>
+
+    <!-- Optionally, stroke (border) around the rectangle -->
+    <stroke
+        android:width="2dp"
+        android:color="#0096C8"/> <!-- Same color as the background or adjust as needed -->
+</shape>

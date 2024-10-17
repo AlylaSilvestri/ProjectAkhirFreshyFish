@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- Logo and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo_white"
+                android:contentDescription="Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish data"
+                android:textSize="18sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- TableLayout for form inputs -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="16dp">
+
+            <!-- Photo Upload -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo Upload"
+                    android:textColor="#616161"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_upload"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Upload Photo"
+                    android:tint="#FFB300" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Fish Name -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Name"
+                    android:textColor="#616161"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter fish name"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Fish Habitat -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Habitat"
+                    android:textColor="#616161"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/fish_habitat_options"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Number of Fish Sold -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Fish Sold"
+                    android:textColor="#616161"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Fish Price -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Price"
+                    android:textColor="#616161"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter price"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00838F"
+            android:padding="12dp"
+            android:text="Sign up"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
